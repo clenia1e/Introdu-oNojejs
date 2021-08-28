@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sucrase ./src -d ./build --transforms imports",
     "start": "node build/server.js",
-    "dev": "nodemon src/server.js",
-    "exec": "npx sequelize db:migrate",
-    "undo": "npx sequelize db:migrateundo:all"
+    "dev": "nodemon src/server.js"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "keywords": [],
   "author": "",
